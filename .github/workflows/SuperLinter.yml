@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r Pig_Dice_Game/requirements.txt
 
       - name: Run tests
         run: pytest
@@ -63,4 +63,4 @@ jobs:
         run: pip install bandit
 
       - name: Run static analysis
-        run: bandit -r src/pig_dice/*.py
+        run: bandit -r Pig_Dice_Game/src/pig_dice/
