@@ -63,4 +63,4 @@ jobs:
         run: pip install bandit
 
       - name: Run static analysis
-        run: bandit -r src/pig_dice
+        run: bandit -r src/pig_dice/*.py
