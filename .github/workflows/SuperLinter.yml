@@ -45,7 +45,7 @@ jobs:
         run: pip install pylint
 
       - name: Lint Python code
-        run: pylint <src/pig_dice>
+        run: pylint src/pig_dice
 
   static-analysis:
     runs-on: ubuntu-latest
@@ -63,4 +63,4 @@ jobs:
         run: pip install bandit
 
       - name: Run static analysis
-        run: bandit -r <src/pig_dice>
+        run: bandit -r src/pig_dice
