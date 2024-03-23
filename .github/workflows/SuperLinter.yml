@@ -45,7 +45,8 @@ jobs:
         run: pip install pylint
 
       - name: Lint Python code
-        run: pylint Pig_Dice_Game/src/pig_dice/*.py
+        run: |
+          find Pig_Dice_Game/src/pig_dice -name "*.py" -exec pylint {} +*.py
 
   static-analysis:
     runs-on: ubuntu-latest
